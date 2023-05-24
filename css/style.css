@@ -1,9 +1,12 @@
+/* carusel */
+
 .carousel-inner{
     width: 100%;
     height: 650px;
     padding-bottom: 50px;
     margin-bottom: 20px;
 }
+/* Nav */
 
 .nav-link{
     color: rgb(1, 11, 19);
@@ -12,11 +15,12 @@
 .row{
     margin: 50px;
 }
+/* cards */
 .card-img-top:hover {
-    /* Start the shake animation and make the animation last for 0.5 seconds */
+    /* cards shake  for 0.5 seconds */
     animation: shake 0.5s;
   
-    /* When the animation is finished, start again */
+    /* loop shake */
     animation-iteration-count: infinite;
   }
   
@@ -36,20 +40,23 @@
   .container-menu{
     display: flex;
   }
-/* Container needed to position the overlay. Adjust the width as needed */
+/* menu */
+
 .menu {
     position: relative;
     width: 50%;
     margin-right: 10px;
   }
   
-  /* Make the image to responsive */
+  /* img */
+
   .image {
     width: 100%;
     height: auto;
   }
   
-  /* The overlay effect (full height and width) - lays on top of the container and over the image */
+  /* The overlay effect over the food img */
+
   .overlay {
     position: absolute;
     bottom: 0;
@@ -63,12 +70,14 @@
     transition: .3s ease;
   }
   
-  /* When you mouse over the container, the overlay text will "zoom" in display */
+  /* When you mouse over the container, the overlay text will "zoom"  */
+
   .menu:hover .overlay {
     transform: scale(1);
   }
   
   /* Some text inside the overlay, which is positioned in the middle vertically and horizontally */
+
   .text {
     color: white;
     font-size: 20px;
@@ -78,15 +87,61 @@
     transform: translate(-50%, -50%);
     text-align: center;
   }
+
 .food{
     text-align: center;
 }
 
+/* ------------Contact Form------ */
+
+#Contact{
+  text-align: center;
+  width: 45%;
+}
+.contact-form{
+  text-align: center;
+  margin-top: 50px;
+  /* margin-bottom: 30px; */
+}
+
+/* ---------------------Map Location------------------- */
+.location{
+  text-align: center;
+  margin-top: 50px;
+}
+.map-responsive{
+  overflow:hidden;
+  padding-bottom:50%;
+  position:relative;
+  height:0;
+}
+.map-responsive iframe{
+  right:0;
+  top:0;
+  height:40%;
+  width:45%;
+  position:absolute;
+}
 
 
+
+
+
+
+/* ----------------------------------------------- */
 @media screen and (max-width: 992px) {
     .carousel-inner{
         width: 100%;
         height:300px;
     }
+
+    .map-responsive iframe{
+      right:0;
+      top:0;
+      height:80%;
+      width:40%;
+      margin-top: 10px;
+      position:absolute;
+    }
+
   }
