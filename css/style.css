@@ -123,8 +123,12 @@
   position:absolute;
 }
 
-
-
+.logo-bottom{
+  position: absolute;
+  right: 45%;
+  bottom: 10px;
+  width: 150px;
+}
 
 
 
@@ -142,6 +146,12 @@
       width:40%;
       margin-top: 10px;
       position:absolute;
+    }
+    .logo-bottom{
+      position: absolute;
+      right: 45%;
+      bottom: 0px;
+      width: 30px;
     }
 
   }
